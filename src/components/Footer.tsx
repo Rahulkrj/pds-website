@@ -257,6 +257,21 @@ export default function Footer() {
             <ArrowUp size={16} />
           </button>
         </div>
+
+        {/* Developer credit */}
+        <div className="mt-4 text-center">
+          <p className="text-white/20 font-[var(--font-lato)] text-[11px]">
+            Designed & Developed by{" "}
+            <a
+              href="https://navexra.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/35 hover:text-[#c9a84c] transition-colors duration-200"
+            >
+              Navexra Labs
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
