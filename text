@@ -1,0 +1,114 @@
+  What's built
+
+  ┌────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │   Component    │                                                         Description                                                         │
+  ├────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ Navbar         │ Sticky, transparent → white on scroll, smooth mobile drawer, gold CTA button                                                │
+  ├────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ Hero           │ Dark luxury fabric-textured background, gold shimmer headline, dual CTA buttons, trust badge row, animated scroll indicator │
+  ├────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ About          │ Two-column layout with image frame + floating "Crafted with Love" badge, 4 animated stat counters                           │
+  ├────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ Services       │ 4-card grid (Custom Stitching, Bridal Wear ★, Alterations, Consultation) with hover effects                                 │
+  ├────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ Portfolio      │ Filterable masonry grid (5 categories), hover overlay with zoom effect, "View on Instagram" CTA                             │
+  ├────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ Testimonials   │ Google 5★ rating banner, carousel with dot navigation + mini review grid on desktop                                         │
+  ├────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ Instagram      │ 6-post grid with hover like/comment overlay, links to @pragyaa.designer_studio                                              │
+  ├────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ Contact        │ Dark section matching hero, 4 contact info cards, booking form + WhatsApp button                                            │
+  ├────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ Footer         │ Dark, social links, back-to-top, tagline                                                                                    │
+  ├────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ WhatsApp Float │ Pulsing green button, chat popup with quick message                                                                         │
+  └────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+  ---
+  Things to replace with real content
+
+  1. Phone number — search 99999 99999 in Contact.tsx, Footer.tsx, WhatsAppButton.tsx
+  2. Portfolio images — replace the gradient placeholders in Portfolio.tsx with <Image> tags
+  3. About image — replace the gradient in About.tsx with your boutique/designer photo
+  4. Instagram grid — replace the 6 placeholder divs in Instagram.tsx with real post images
+  5. Logo — swap the text "P" monogram in Navbar.tsx + Footer.tsx with your actual logo file
+
+
+
+
+**Portfolio Image Dimensions & File Size**                                                                                                                  
+                                                                                                                                                          
+  The grid uses two aspect ratios:                                                                                                                        
+                                                                                                                                                          
+  ┌──────────────────────┬──────────────────┬────────────────────────┬───────────────┐                                                                    
+  │      Card Type       │   Aspect Ratio   │ Recommended Pixel Size │ Max File Size │
+  ├──────────────────────┼──────────────────┼────────────────────────┼───────────────┤                                                                    
+  │ Tall (tall: true)    │ 3 : 4 (portrait) │ 900 × 1200 px          │ 300 KB        │                                                                  
+  ├──────────────────────┼──────────────────┼────────────────────────┼───────────────┤
+  │ Square (tall: false) │ 1 : 1            │ 900 × 900 px           │ 200 KB        │                                                                    
+  └──────────────────────┴──────────────────┴────────────────────────┴───────────────┘                                                                    
+                                                                                                                                                          
+  Which items are tall (portrait):                                                                                                                        
+  - Item 1 — Bridal Lehenga                                                                                                                             
+  - Item 4 — Custom Suit                                                                                                                                  
+  - Item 6 — Embroidered Kurti                                                                                                                          
+  - Item 9 — Bridal Lehenga                                                                                                                               
+  - Item 11 — Designer Coord Set                                                                                                                        
+                                                                                                                                                          
+  Which items are square:
+  - Items 2, 3, 5, 7, 8, 10, 12                                                                                                                           
+                                                                                                                                                          
+  Format & Tips
+                                                                                                                                                          
+  - Format: JPEG (for photos), WebP preferred (better compression, same quality)                                                                          
+  - Quality: Export at 80–85% quality
+  - Color space: sRGB                                                                                                                                     
+  - Naming: keep it simple, e.g. bridal-lehenga-01.jpg                                                                                                    
+                                                                                                                                                          
+  Place images in /public/portfolio/ and reference them as /portfolio/bridal-lehenga-01.jpg in the portfolioItems array.                                  
+                                                                                                                                                          
+  ---                                                                                                                                                     
+  Also saving your contact details now.                                                                                      
+
+
+
+                                                                                                                               
+⏺ "Our Story — Where Fashion Meets Artistry" is already your About section (About.tsx). It's built but has a gradient           
+  placeholder where the real image goes. Here's what you can add or improve:                                                    
+                                                                                                                                
+  ---                                                                                                                           
+  What's Already There                                                                                                          
+                                                                                                                                
+  - 3 paragraphs about the studio                                                                                               
+  - Pragya's signature (Founder & Head Designer)                                                                                
+  - Stats row: 100+ Clients, 5★, 500+ Outfits, 10+ Years                                                                      
+                                                                                                                                
+  ---                                                                                                                         
+  What You Can Add
+                                                                                                                                
+  1. Real Photo (most impactful)
+                                                                                                                                
+  Replace the gradient placeholder with an actual photo — Pragya at work, the studio interior, or a signature outfit.           
+  Recommended size: 800 × 1000 px (4:5 portrait).
+                                                                                                                                
+  2. Journey / Milestone Timeline                                                                                             
+
+  A small horizontal strip showing key moments:                                                                                 
+  ▎ 2014 — Started from home → 2018 — First bridal collection → 2022 — Studio opened → 2024 — 500+ outfits
+                                                                                                                                
+  3. Values Cards                                                                                                             
+                                                                                                                                
+  3 small icon cards below the text:                                                                                            
+  ▎ ✂️  Precision Stitching · 💎 Premium Fabrics · 🤝 Personal Attention
+                                                                                                                                
+  4. Update the Stats with Real Numbers                                                                                       
+                                                                                                                                
+  The current stats are placeholders:                                                                                         
+  - 100+ Happy Clients — is this accurate?                                                                                      
+  - 5★ Google Rating — correct?                                                                                                 
+  - 500+ Outfits Created — correct?
+  - 10+ Years of Passion — correct?                                                                                             
+                                                                                                                              
+  5. Pragya's Full Name / Last Name in Signature
+                                                                                                                                
+  Currently just shows "Pragya" — add full name if you'd like.   
