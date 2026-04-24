@@ -10,8 +10,9 @@ const services = [
     icon: Scissors,
     title: "Custom Stitching",
     description:
-      "We take your fabric and your vision to craft outfits that fit perfectly. Every stitch is done with care and attention to your unique measurements.",
+      "We craft outfits that fit you perfectly — your fabric, your vision, your exact measurements. Every stitch is done with care and passion.",
     features: ["Personalized measurements", "Fabric of your choice", "Multiple fittings"],
+    localTag: "Most popular in New Ashok Nagar",
     accent: "from-[#c9a84c]/20 to-[#f5ede0]",
     iconBg: "bg-[#c9a84c]/15",
   },
@@ -21,6 +22,7 @@ const services = [
     description:
       "Your wedding day deserves the most beautiful outfit. We design dream lehengas, sarees, and bridal suits that make you the star of your special day.",
     features: ["Bridal consultation", "Embroidery & embellishments", "Trial fittings included"],
+    localTag: "Top choice for Noida & Delhi brides",
     accent: "from-[#e8d5c4] to-[#f5ede0]",
     iconBg: "bg-[#c9a84c]/15",
     featured: true,
@@ -31,6 +33,7 @@ const services = [
     description:
       "Give your favorite outfits a new life. Our skilled tailors handle all types of alterations — from resizing to reshaping — with expert precision.",
     features: ["Quick turnaround", "All outfit types", "Quality guaranteed"],
+    localTag: "Trusted by Indirapuram customers",
     accent: "from-[#c9a84c]/20 to-[#f5ede0]",
     iconBg: "bg-[#c9a84c]/15",
   },
@@ -38,8 +41,9 @@ const services = [
     icon: Palette,
     title: "Designer Consultation",
     description:
-      "Not sure what to wear? Our designer helps you choose the right style, fabric, and color for any occasion — from weddings to daily wear.",
+      "Not sure what to wear? Book your personalized consultation today — style, fabric, and design guidance for every occasion.",
     features: ["Style guidance", "Trend advice", "Fabric selection"],
+    localTag: "Popular among Delhi NCR clients",
     accent: "from-[#e8d5c4] to-[#f5ede0]",
     iconBg: "bg-[#c9a84c]/15",
   },
@@ -115,7 +119,7 @@ export default function Services() {
               </p>
 
               {/* Features */}
-              <ul className="space-y-1.5">
+              <ul className="space-y-1.5 mb-5">
                 {service.features.map((feature) => (
                   <li
                     key={feature}
@@ -128,6 +132,24 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
+
+              {/* Local popularity tag */}
+              {"localTag" in service && (
+                <p className="text-[10px] text-[#a07830] font-[var(--font-lato)] tracking-wide mb-4 italic">
+                  📍 {(service as typeof service & { localTag: string }).localTag}
+                </p>
+              )}
+
+              {/* Per-card CTA */}
+              <button
+                onClick={() => {
+                  const el = document.querySelector("#contact");
+                  if (el) el.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="w-full text-center text-xs font-[var(--font-lato)] tracking-wider uppercase text-[#c9a84c] border border-[#c9a84c]/40 px-4 py-2 rounded-full hover:bg-[#c9a84c] hover:text-white hover:border-[#c9a84c] transition-all duration-300"
+              >
+                Talk to Our Designer
+              </button>
 
               {/* Hover bottom line */}
               <div className="absolute bottom-0 left-4 right-4 h-0.5 bg-gradient-to-r from-transparent via-[#c9a84c] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />

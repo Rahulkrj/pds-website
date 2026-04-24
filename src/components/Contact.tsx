@@ -104,15 +104,20 @@ export default function Contact() {
               </span>
             </div>
 
-            <h2 className="font-[var(--font-playfair)] text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-              Ready to Create Your{" "}
-              <span className="gold-shimmer italic">Dream Outfit?</span>
+            <h2 className="font-[var(--font-playfair)] text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
+              Design Your Dream Outfit{" "}
+              <span className="gold-shimmer italic">with Experts</span>
             </h2>
 
-            <p className="text-white/70 font-[var(--font-lato)] text-base leading-relaxed mb-10">
-              We&apos;d love to hear from you. Book a consultation, ask about our services, or
-              simply say hello — we&apos;re always happy to help you look and feel your best.
+            <p className="text-white/70 font-[var(--font-lato)] text-base leading-relaxed mb-4">
+              Trusted by 100+ happy customers in <strong className="text-white/90">New Ashok Nagar &amp; nearby areas</strong> — Noida, Indirapuram, and East Delhi.
             </p>
+
+            {/* Rating badge */}
+            <div className="inline-flex items-center gap-2 bg-[#c9a84c]/15 border border-[#c9a84c]/30 rounded-full px-4 py-1.5 mb-8">
+              <span className="text-[#e8c97a] text-sm">⭐⭐⭐⭐⭐</span>
+              <span className="text-[#e8c97a] text-xs font-[var(--font-lato)] tracking-wide">5.0 Google Rating · 100+ Reviews</span>
+            </div>
 
             {/* Contact info cards */}
             <div className="grid sm:grid-cols-2 gap-4">
@@ -174,6 +179,19 @@ export default function Contact() {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           >
+            {/* Testimonial near form */}
+            <div className="bg-white/8 border border-white/10 rounded-xl p-4 mb-4">
+              <div className="flex gap-1 mb-2">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-[#c9a84c] text-xs">★</span>
+                ))}
+              </div>
+              <p className="text-white/80 font-[var(--font-lato)] text-sm leading-relaxed italic">
+                &ldquo;Pragya stitched my bridal lehenga and I got so many compliments. The fitting was absolutely perfect — better than any boutique in Noida.&rdquo;
+              </p>
+              <p className="text-[#e8c97a] text-xs font-[var(--font-lato)] mt-2">— Priya S., Noida Sector 18</p>
+            </div>
+
             <div className="bg-[#fdf8f3] rounded-2xl p-8 md:p-10 shadow-[0_20px_60px_rgba(0,0,0,0.3)]">
               <div className="flex items-center gap-2 mb-2">
                 <Calendar size={20} className="text-[#c9a84c]" />

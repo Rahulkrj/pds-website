@@ -46,6 +46,9 @@ export default function AreasWeServe() {
             Our boutique in New Ashok Nagar, New Delhi is easily accessible from Noida, Indirapuram,
             and all parts of East Delhi.
           </p>
+          <p className="mt-2 text-[#c9a84c] font-[var(--font-lato)] text-sm font-medium">
+            Customers from Noida and Indirapuram regularly visit our boutique for bridal wear &amp; custom stitching.
+          </p>
         </div>
 
         {/* Location cards */}

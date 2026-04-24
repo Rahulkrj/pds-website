@@ -78,10 +78,10 @@ export default function Hero() {
           variants={fadeUp}
           className="font-[var(--font-playfair)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.15] mb-6"
         >
-          Custom Designs That{" "}
-          <span className="gold-shimmer italic">Reflect</span>
+          Best Boutique in{" "}
+          <span className="gold-shimmer italic">New Ashok Nagar</span>
           <br />
-          <span className="text-white">Your Style</span>
+          <span className="text-white">for Designer Dresses</span>
         </motion.h1>
 
         {/* Divider */}
@@ -101,10 +101,8 @@ export default function Hero() {
           variants={fadeUp}
           className="font-[var(--font-lato)] text-white/75 text-base sm:text-lg md:text-xl leading-relaxed max-w-xl mb-10"
         >
-          The best boutique near you in{" "}
-          <span className="text-[#e8c97a]">New Ashok Nagar, New Delhi</span> —
-          tailored outfits, bridal lehengas, and designer wear crafted with
-          precision and passion.
+          Custom stitching, bridal wear &amp; designer outfits for{" "}
+          <span className="text-[#e8c97a]">Delhi &amp; Noida customers</span>
         </motion.p>
 
         {/* CTA Buttons */}
@@ -115,42 +113,58 @@ export default function Hero() {
           variants={fadeUp}
           className="flex flex-col sm:flex-row gap-4 items-center"
         >
-          <button
-            onClick={() => scrollToSection("#portfolio")}
-            className="group bg-gradient-to-r from-[#c9a84c] to-[#a07830] text-white font-[var(--font-lato)] font-700 tracking-wider uppercase text-sm px-8 py-4 rounded-full hover:shadow-[0_8px_30px_rgba(201,168,76,0.5)] hover:-translate-y-1 transition-all duration-300 min-w-[180px]"
+          <a
+            href={`https://wa.me/918090316099?text=${encodeURIComponent("Hi Pragya Designer Studio! I'd like to book an appointment for a custom outfit.")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group bg-[#25D366] hover:bg-[#20BA5A] text-white font-[var(--font-lato)] font-bold tracking-wider uppercase text-sm px-8 py-4 rounded-full hover:shadow-[0_8px_30px_rgba(37,211,102,0.5)] hover:-translate-y-1 transition-all duration-300 min-w-[240px] text-center"
           >
             <span className="flex items-center justify-center gap-2">
-              View Collection
-              <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
+              💬 Book on WhatsApp
+              <span className="text-[10px] normal-case tracking-normal font-normal opacity-90">(Instant Reply)</span>
             </span>
-          </button>
+          </a>
 
-          <button
-            onClick={() => scrollToSection("#contact")}
-            className="group border border-[#c9a84c]/60 text-[#e8c97a] font-[var(--font-lato)] tracking-wider uppercase text-sm px-8 py-4 rounded-full hover:bg-[#c9a84c]/15 hover:border-[#c9a84c] hover:-translate-y-1 transition-all duration-300 min-w-[180px]"
+          <a
+            href="tel:+918090316099"
+            className="group border border-[#c9a84c]/60 text-[#e8c97a] font-[var(--font-lato)] tracking-wider uppercase text-sm px-8 py-4 rounded-full hover:bg-[#c9a84c]/15 hover:border-[#c9a84c] hover:-translate-y-1 transition-all duration-300 min-w-[180px] text-center"
           >
-            Book Appointment
-          </button>
+            📞 Call Now
+          </a>
         </motion.div>
 
-        {/* Trust badge row */}
-        <motion.div
+        {/* Urgency text */}
+        <motion.p
           custom={5}
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="flex flex-wrap items-center justify-center gap-6 mt-12 text-white/50 text-xs font-[var(--font-lato)] tracking-widest uppercase"
+          className="mt-4 text-[#e8c97a]/80 text-xs font-[var(--font-lato)] tracking-wide"
         >
-          {["Custom Stitching", "Bridal Wear", "New Ashok Nagar", "100+ Happy Clients"].map(
-            (item, i) => (
-              <span key={item} className="flex items-center gap-2">
-                {i > 0 && <span className="text-[#c9a84c]/40">·</span>}
-                <span className="hover:text-[#e8c97a] transition-colors duration-200 cursor-default">
-                  {item}
-                </span>
-              </span>
-            )
-          )}
+          ⚡ Limited appointments today — book your slot now
+        </motion.p>
+
+        {/* Trust badges */}
+        <motion.div
+          custom={6}
+          initial="hidden"
+          animate="visible"
+          variants={fadeUp}
+          className="flex flex-wrap items-center justify-center gap-3 mt-10"
+        >
+          {[
+            { icon: "⭐", text: "5.0 Google Rating" },
+            { icon: "👗", text: "100+ Happy Clients" },
+            { icon: "📍", text: "Serving Delhi NCR" },
+          ].map((badge) => (
+            <span
+              key={badge.text}
+              className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm border border-white/15 text-white/80 text-xs font-[var(--font-lato)] px-3 py-1.5 rounded-full"
+            >
+              <span>{badge.icon}</span>
+              {badge.text}
+            </span>
+          ))}
         </motion.div>
       </div>
 
