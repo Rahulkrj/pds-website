@@ -332,9 +332,11 @@ export default function Contact() {
           <div className="rounded-2xl overflow-hidden border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.3)]">
             <iframe
               title="Pragya Designer Studio location on Google Maps — New Ashok Nagar, New Delhi"
-              src="https://maps.google.com/maps?q=Block+A+397+Street+No+9+Near+S+N+School+New+Ashok+Nagar+New+Delhi+110096&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d258.9896234317759!2d77.30841660883257!3d28.590992716861614!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce595766dd609%3A0x96182be5cd9f638a!2sPragya%20Designer%20Studio!5e0!3m2!1sen!2sus!4v1777041999874!5m2!1sen!2sus"
               width="100%"
               height="280"
+              style={{ border: 0 }}
+              allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full"
