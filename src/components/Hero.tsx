@@ -101,8 +101,10 @@ export default function Hero() {
           variants={fadeUp}
           className="font-[var(--font-lato)] text-white/75 text-base sm:text-lg md:text-xl leading-relaxed max-w-xl mb-10"
         >
-          Tailored outfits crafted with precision and passion — from bridal
-          lehengas to elegant everyday wear, every piece tells your story.
+          The best boutique near you in{" "}
+          <span className="text-[#e8c97a]">New Ashok Nagar, New Delhi</span> —
+          tailored outfits, bridal lehengas, and designer wear crafted with
+          precision and passion.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -139,7 +141,7 @@ export default function Hero() {
           variants={fadeUp}
           className="flex flex-wrap items-center justify-center gap-6 mt-12 text-white/50 text-xs font-[var(--font-lato)] tracking-widest uppercase"
         >
-          {["Custom Stitching", "Bridal Wear", "100+ Happy Clients", "Designer Consultation"].map(
+          {["Custom Stitching", "Bridal Wear", "New Ashok Nagar", "100+ Happy Clients"].map(
             (item, i) => (
               <span key={item} className="flex items-center gap-2">
                 {i > 0 && <span className="text-[#c9a84c]/40">·</span>}

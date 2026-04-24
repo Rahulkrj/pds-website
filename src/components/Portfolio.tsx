@@ -9,18 +9,18 @@ import { ExternalLink, ZoomIn } from "lucide-react";
 const categories = ["All", "Bridal", "Ethnic Wear", "Modern", "Custom Stitching"];
 
 const portfolioItems = [
-  { id: 1,  category: "Bridal",           label: "Bridal Lehenga",      tall: true,  src: "/images/portfolio/potrate/Bridal/bridal-1.jpg"  },
-  { id: 2,  category: "Ethnic Wear",      label: "Designer Anarkali",   tall: false, src: "/images/portfolio/square/Ethnic/ethnic-1.png"   },
-  { id: 3,  category: "Modern",           label: "Indo-Western Gown",   tall: false, src: "/images/portfolio/square/Modern/modern-1.png"   },
-  { id: 4,  category: "Custom Stitching", label: "Custom Suit",         tall: true,  src: "/images/portfolio/potrate/Custom/custom-1.jpg"  },
-  { id: 5,  category: "Bridal",           label: "Bridal Saree",        tall: false, src: "/images/portfolio/square/Bridal/bridal-1.png"   },
-  { id: 6,  category: "Ethnic Wear",      label: "Embroidered Kurti",   tall: true,  src: "/images/portfolio/potrate/Ethnic/ethnic-1.jpg"  },
-  { id: 7,  category: "Modern",           label: "Fusion Dress",        tall: false, src: "/images/portfolio/square/Modern/modern-2.png"   },
-  { id: 8,  category: "Custom Stitching", label: "Party Wear",          tall: false, src: "/images/portfolio/square/Custom/custom-1.png"   },
-  { id: 9,  category: "Bridal",           label: "Bridal Lehenga",      tall: true,  src: "/images/portfolio/potrate/Bridal/bridal-2.jpg"  },
-  { id: 10, category: "Ethnic Wear",      label: "Ghagra Choli",        tall: false, src: "/images/portfolio/square/Ethnic/ethnic-2.png"   },
-  { id: 11, category: "Modern",           label: "Designer Coord Set",  tall: true,  src: "/images/portfolio/potrate/Modern/modern-1.jpg"  },
-  { id: 12, category: "Custom Stitching", label: "Formal Wear",         tall: false, src: "/images/portfolio/square/Custom/custom-2.png"   },
+  { id: 1,  category: "Bridal",           label: "Bridal Lehenga",     alt: "Custom bridal lehenga stitched at Pragya Designer Studio boutique, New Ashok Nagar, New Delhi",            tall: true,  src: "/images/portfolio/potrate/Bridal/bridal-1.jpg"  },
+  { id: 2,  category: "Ethnic Wear",      label: "Designer Anarkali",  alt: "Handcrafted designer anarkali suit stitched at ladies boutique in New Ashok Nagar, Delhi",                tall: false, src: "/images/portfolio/square/Ethnic/ethnic-1.png"   },
+  { id: 3,  category: "Modern",           label: "Indo-Western Gown",  alt: "Indo-western fusion gown custom stitched at Pragya Designer Studio, New Delhi",                          tall: false, src: "/images/portfolio/square/Modern/modern-1.png"   },
+  { id: 4,  category: "Custom Stitching", label: "Custom Suit",        alt: "Custom stitched salwar suit crafted at ladies boutique in New Ashok Nagar, New Delhi",                    tall: true,  src: "/images/portfolio/potrate/Custom/custom-1.jpg"  },
+  { id: 5,  category: "Bridal",           label: "Bridal Saree",       alt: "Bridal saree with custom blouse stitched at Pragya Designer Studio boutique, New Delhi",                  tall: false, src: "/images/portfolio/square/Bridal/bridal-1.png"   },
+  { id: 6,  category: "Ethnic Wear",      label: "Embroidered Kurti",  alt: "Embroidered designer kurti custom stitched at boutique in New Ashok Nagar, Delhi",                        tall: true,  src: "/images/portfolio/potrate/Ethnic/ethnic-1.jpg"  },
+  { id: 7,  category: "Modern",           label: "Fusion Dress",       alt: "Designer fusion dress stitched at Pragya Designer Studio, ladies tailor New Ashok Nagar",                 tall: false, src: "/images/portfolio/square/Modern/modern-2.png"   },
+  { id: 8,  category: "Custom Stitching", label: "Party Wear",         alt: "Designer party wear outfit custom stitched at boutique in New Ashok Nagar, New Delhi",                    tall: false, src: "/images/portfolio/square/Custom/custom-1.png"   },
+  { id: 9,  category: "Bridal",           label: "Bridal Lehenga",     alt: "Heavy embroidered bridal lehenga stitched at Pragya Designer Studio, New Ashok Nagar",                   tall: true,  src: "/images/portfolio/potrate/Bridal/bridal-2.jpg"  },
+  { id: 10, category: "Ethnic Wear",      label: "Ghagra Choli",       alt: "Traditional ghagra choli custom stitched at ladies boutique, New Ashok Nagar, New Delhi",                 tall: false, src: "/images/portfolio/square/Ethnic/ethnic-2.png"   },
+  { id: 11, category: "Modern",           label: "Designer Coord Set", alt: "Trendy designer coord set crafted at Pragya Designer Studio boutique, New Ashok Nagar",                   tall: true,  src: "/images/portfolio/potrate/Modern/modern-1.jpg"  },
+  { id: 12, category: "Custom Stitching", label: "Formal Wear",        alt: "Custom formal wear outfit stitched at ladies tailor boutique, New Ashok Nagar, New Delhi",                tall: false, src: "/images/portfolio/square/Custom/custom-2.png"   },
 ];
 
 export default function Portfolio() {
@@ -110,7 +110,7 @@ export default function Portfolio() {
                 {/* Portfolio image */}
                 <Image
                   src={item.src}
-                  alt={item.label}
+                  alt={item.alt}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-110"

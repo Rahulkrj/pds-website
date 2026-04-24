@@ -75,7 +75,7 @@ export default function Services() {
           </h2>
           <p className="mt-4 text-[#7a7370] font-[var(--font-lato)] max-w-xl mx-auto text-base leading-relaxed">
             From bridal masterpieces to everyday elegance, we bring your fashion dreams to life
-            with skill and passion.
+            with skill and passion — right here in New Ashok Nagar, New Delhi.
           </p>
         </motion.div>
 

@@ -6,6 +6,8 @@ import Portfolio from "@/components/Portfolio";
 import Testimonials from "@/components/Testimonials";
 import InstagramSection from "@/components/Instagram";
 import Contact from "@/components/Contact";
+import AreasWeServe from "@/components/AreasWeServe";
+import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -21,6 +23,8 @@ export default function Home() {
         <Testimonials />
         <InstagramSection />
         <Contact />
+        <AreasWeServe />
+        <FAQ />
       </main>
       <Footer />
       <WhatsAppButton />

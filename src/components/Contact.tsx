@@ -67,6 +67,7 @@ export default function Contact() {
     <section
       id="contact"
       ref={ref}
+      aria-label="Contact Pragya Designer Studio in New Ashok Nagar"
       className="py-20 md:py-28 relative overflow-hidden"
     >
       {/* Background */}
@@ -244,6 +245,10 @@ export default function Contact() {
                 </div>
 
                 <div className="pt-2">
+                  <p className="flex items-center gap-1.5 text-xs font-[var(--font-lato)] text-[#c9a84c] mb-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#c9a84c] animate-pulse flex-shrink-0" />
+                    Limited appointment slots available — book your slot today
+                  </p>
                   <button
                     type="submit"
                     className="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BA5A] text-white font-[var(--font-lato)] text-sm tracking-wider uppercase px-6 py-3.5 rounded-xl hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(37,211,102,0.4)] transition-all duration-300"
@@ -256,6 +261,69 @@ export default function Contact() {
             </div>
           </motion.div>
         </div>
+
+        {/* Call Now + Google Maps */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
+          className="mt-16 grid md:grid-cols-2 gap-8 items-start"
+        >
+          {/* Call Now CTA */}
+          <div className="flex flex-col gap-4">
+            <h3 className="font-[var(--font-playfair)] text-xl font-bold text-white">
+              Prefer to call us directly?
+            </h3>
+            <p className="text-white/60 font-[var(--font-lato)] text-sm leading-relaxed">
+              We&apos;re available Monday to Sunday, 10 AM – 10 PM at our studio
+              in <strong className="text-white/80">New Ashok Nagar, New Delhi</strong>.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="tel:+918090316099"
+                className="inline-flex items-center justify-center gap-2 bg-white text-[#1a1008] font-[var(--font-lato)] font-bold text-sm tracking-wider uppercase px-6 py-3.5 rounded-xl hover:bg-[#f5ede0] hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(255,255,255,0.2)] transition-all duration-300"
+                aria-label="Call Pragya Designer Studio"
+              >
+                <Phone size={15} />
+                Call Now: +91 80903 16099
+              </a>
+              <a
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-[var(--font-lato)] text-sm tracking-wider uppercase px-6 py-3.5 rounded-xl hover:bg-[#20BA5A] hover:-translate-y-0.5 transition-all duration-300"
+                aria-label="WhatsApp Pragya Designer Studio"
+              >
+                <MessageCircle size={15} />
+                WhatsApp Us
+              </a>
+            </div>
+
+            {/* NAP block for local SEO */}
+            <address className="not-italic mt-2 text-white/50 font-[var(--font-lato)] text-xs leading-relaxed">
+              <strong className="text-white/70 block mb-1">Pragya Designer Studio</strong>
+              Block A, 397, Street No 9, Near S N School,<br />
+              New Ashok Nagar, New Delhi – 110096<br />
+              <a href="tel:+918090316099" className="hover:text-[#e8c97a] transition-colors">
+                +91 80903 16099
+              </a>
+            </address>
+          </div>
+
+          {/* Google Maps embed */}
+          <div className="rounded-2xl overflow-hidden border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.3)]">
+            <iframe
+              title="Pragya Designer Studio location on Google Maps — New Ashok Nagar, New Delhi"
+              src="https://maps.google.com/maps?q=Block+A+397+Street+No+9+Near+S+N+School+New+Ashok+Nagar+New+Delhi+110096&output=embed"
+              width="100%"
+              height="280"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full"
+              aria-label="Map showing Pragya Designer Studio in New Ashok Nagar, New Delhi"
+            />
+          </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -112,3 +112,105 @@
   5. Pragya's Full Name / Last Name in Signature
                                                                                                                                 
   Currently just shows "Pragya" — add full name if you'd like.   
+
+
+
+  You are an expert SEO engineer and Next.js developer.
+
+Optimize my boutique website "Pragya Designer Studio" for high Google ranking, local SEO (India), and fast performance.
+
+Tech Stack:
+- Next.js (App Router)
+- Tailwind CSS
+
+Business Details:
+- Name: Pragya Designer Studio
+- Type: Fashion Boutique (custom stitching, bridal wear, designer outfits)
+- Target Location: New Ashok Nagar, New Delhi, India
+- Goal: Rank on Google for local searches and increase leads via WhatsApp
+
+Tasks:
+
+1. SEO Metadata:
+- Add dynamic metadata using Next.js App Router
+- Include:
+  - Title: "Pragya Designer Studio | Best Boutique in New Ashok Nagar for Designer Dresses"
+  - Description: "Looking for custom designer outfits in New Ashok Nagar? Pragya Designer Studio offers bridal wear, stitching, and designer consultation."
+  - Keywords: boutique in New Ashok Nagar, designer boutique New Ashok Nagar, bridal wear New Ashok Nagar, ladies tailor New Ashok Nagar
+- Add Open Graph + Twitter meta tags
+- Add canonical URL
+
+2. Structured Data (VERY IMPORTANT):
+- Add JSON-LD schema for:
+  - LocalBusiness
+  - ClothingStore
+- Include:
+  - Name
+  - Address (from Google Business)
+  - Phone
+  - Opening hours
+  - Google Maps link
+- Ensure it is valid for Google Rich Results
+
+3. Performance Optimization:
+- Use next/image for all images
+- Lazy load images
+- Compress images
+- Use proper sizes and priority for hero images
+
+4. URL Structure:
+- Clean URLs:
+  / (home)
+  /about
+  /services
+  /portfolio
+  /contact
+
+5. Content SEO:
+- Add proper heading structure (H1, H2, H3)
+- Use keywords naturally in:
+  - Hero section
+  - About section
+  - Services
+- Add internal linking
+
+6. Local SEO Optimization:
+- Add Google Maps embed
+- Add "Near me" keywords (e.g., "Best boutique near you in New Ashok Nagar")
+- Add NAP consistency (Name, Address, Phone)
+
+7. Sitemap + Robots:
+- Generate sitemap.xml
+- Generate robots.txt
+- Allow all search engines
+
+8. Accessibility:
+- Add alt text to all images (describe dresses, designs)
+- Use semantic HTML
+
+9. Mobile Optimization:
+- Ensure fast loading on mobile
+- Lighthouse score > 90
+
+10. CTA Optimization:
+- Add WhatsApp click-to-chat button
+- Add "Call Now" button
+
+11. Bonus:
+- Add FAQ schema (for better ranking)
+- Example questions:
+  - Do you provide bridal stitching?
+  - What is the price range?
+  - How to book appointment?
+
+Output:
+- Provide full implementation code
+- Show file structure
+- Include reusable SEO component
+- Include schema markup
+- Ensure production-ready code
+
+Important:
+- Focus heavily on LOCAL SEO (New Ashok Nagar)
+- Write clean, scalable code
+- Do not skip structured data

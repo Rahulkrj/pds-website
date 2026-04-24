@@ -110,8 +110,9 @@ export default function About() {
             <div className="space-y-4 text-[#7a7370] font-[var(--font-lato)] leading-relaxed text-base">
               <p>
                 Welcome to <strong className="text-[#2c2c2c]">Pragya Designer Studio</strong> — a
-                boutique born from a passion for fashion and a deep respect for craftsmanship. We
-                believe that every woman deserves to wear something that feels uniquely hers.
+                boutique in <strong className="text-[#2c2c2c]">New Ashok Nagar, New Delhi</strong>{" "}
+                born from a passion for fashion and a deep respect for craftsmanship. We believe
+                that every woman deserves to wear something that feels uniquely hers.
               </p>
               <p>
                 From the very first consultation to the final fitting, we pour our heart into
@@ -119,9 +120,9 @@ export default function About() {
                 or a contemporary fusion outfit — we tailor it to celebrate <em>you</em>.
               </p>
               <p>
-                With over a decade of experience, our designer personally attends to every client,
-                ensuring the highest quality fabrics, impeccable stitching, and a fit that makes
-                you feel confident and beautiful.
+                With over a decade of experience, our designer personally attends to every client
+                near New Ashok Nagar, ensuring the highest quality fabrics, impeccable stitching,
+                and a fit that makes you feel confident and beautiful.
               </p>
             </div>
 
